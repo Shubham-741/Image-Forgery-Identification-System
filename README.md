@@ -56,8 +56,8 @@ image-forgery-flask-app
 
 Below is an example image used in the application:
 
-![HomePage](static/images/HomePage.png)
-![SampleResult](static/images/SampleResult.png)
+![HomePage](image-forgery-flask-app/static/images/HomePage.png)
+![SampleResult](image-forgery-flask-app/static/images/SampleResult.png)
 
 ## Dependencies
 
