@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Forgery Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-top: 5rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        label {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕵️‍♂️ Image Forgery Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="image">Upload an Image:</label>
+                <input type="file" class="form-control-file" id="image" name="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">🔍 Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
